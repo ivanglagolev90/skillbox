@@ -19,10 +19,14 @@ for i in family_member:
     print(i, ':', family_member[i])
 
 na = input('Имя: ')
+flag = False
 for i in family_member.get('children', {}):
-   for m in i:
-    if (m.get('name', {}).get(na, {})):
-        print('есть')
+  if i.get('name', {}) == na:
+    flag = True
+    break
 
-#print(family_member.get('children', {}) .get('name', {}).get(na, 'Nochild'))
+if flag:
+  print('Есть')
+else:
+  print('нет')
 
