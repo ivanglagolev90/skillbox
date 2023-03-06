@@ -1,0 +1,1 @@
+Katuk kurduk
